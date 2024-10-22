@@ -24,3 +24,10 @@ def test_for_empty_string():
     test_string = ' '
     result = False
     assert result == palindrome.is_palindrome(test_string)
+
+
+def test_for_a_input():
+    test_string = 'a'
+    result = True
+    assert result == palindrome.is_palindrome(test_string)
+    

@@ -48,3 +48,9 @@ def test_for_laval_input():
     test_string = 'laval'
     result = True
     assert result == palindrome.is_palindrome(test_string)
+
+
+def test_for_toronto():
+    test_string = 'toronto'
+    result = False
+    assert result == palindrome.is_palindrome(test_string)

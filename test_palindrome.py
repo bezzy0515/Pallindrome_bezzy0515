@@ -18,3 +18,9 @@ def test_input_data_for_string():
         palindrome.is_palindrome(test_int)
     with pytest.raises(ValueError):
         palindrome.is_palindrome(test_float)
+
+
+def test_for_empty_string():
+    test_string = ' '
+    result = False
+    assert result == palindrome.is_palindrome(test_string)

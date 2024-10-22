@@ -54,3 +54,9 @@ def test_for_toronto():
     test_string = 'toronto'
     result = False
     assert result == palindrome.is_palindrome(test_string)
+
+
+def test_for_Able_was_I_ere_I_saw_Elba():
+    test_string = 'Able was I ere I saw Elba'
+    result = True
+    assert result == palindrome.is_palindrome(test_string)

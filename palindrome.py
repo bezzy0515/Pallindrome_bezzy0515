@@ -19,3 +19,7 @@ def is_palindrome(input_value):
                 if input_value == 'a':
                     ip = True
                     return ip
+            if len(char_deque) == 2:
+                if char_deque[0] == char_deque[-1]:
+                    ip = True
+                    return ip

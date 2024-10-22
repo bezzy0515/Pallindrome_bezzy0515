@@ -36,3 +36,10 @@ def test_for_bb_input():
     test_string = 'bb'
     result = True
     assert result == palindrome.is_palindrome(test_string)
+
+
+def test_for_abc_input():
+    test_string = 'abc'
+    result = False
+    assert result == palindrome.is_palindrome(test_string)
+    

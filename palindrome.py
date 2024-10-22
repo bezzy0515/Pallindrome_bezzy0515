@@ -23,3 +23,17 @@ def is_palindrome(input_value):
                 if char_deque[0] == char_deque[-1]:
                     ip = True
                     return ip
+            else:
+                while len(char_deque) > 1:
+                    first = char_deque[0]
+                    last = char_deque[-1]
+
+                    if first != last:
+                        ip = False
+                        return ip
+                    else:
+                        char_deque.pop()
+                        char_deque.popleft()
+
+                ip = True
+                return ip

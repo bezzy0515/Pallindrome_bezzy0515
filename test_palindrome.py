@@ -42,4 +42,9 @@ def test_for_abc_input():
     test_string = 'abc'
     result = False
     assert result == palindrome.is_palindrome(test_string)
-    
+
+
+def test_for_laval_input():
+    test_string = 'laval'
+    result = True
+    assert result == palindrome.is_palindrome(test_string)
